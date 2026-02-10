@@ -4,13 +4,13 @@
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <router-link to="/">Home</router-link>
           </li>
           <li>
-            <a href="/kit">Kit</a>
+            <router-link to="/kit">Kit</router-link>
           </li>
           <li>
-            <a href="/bikes">Bikes</a>
+            <router-link to="/bikes">Bikes</router-link>
           </li>
         </ul>
       </nav>
@@ -35,6 +35,9 @@ defineProps({
   width: 250px;
   position: absolute;
   overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 @media (min-width: 400px) {
@@ -64,6 +67,11 @@ defineProps({
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.2s;
+}
+
+.side-menu nav a.router-link-exact-active {
+  background-color: var(--accent);
+  color: white;
 }
 
 .side-menu nav a:hover {
