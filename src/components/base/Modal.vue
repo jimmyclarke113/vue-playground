@@ -37,14 +37,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--altbg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,9 +52,9 @@ export default {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: var(--bg);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--text);
     max-width: 500px;
     width: 90%;
 }
@@ -64,7 +64,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--text);
 }
 
 .modal-close {
@@ -72,7 +72,7 @@ export default {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #666;
+    color: var(--text);
 }
 
 .modal-body {
@@ -81,7 +81,7 @@ export default {
 
 .modal-footer {
     padding: 16px;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--text);
     display: flex;
     justify-content: flex-end;
     gap: 8px;

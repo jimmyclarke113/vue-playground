@@ -8,7 +8,7 @@
         provided for illustrative and conceptual purposes only. It may not
         be accurate, complete, or suitable for real-world decisions.
       </p>
-      <button @click="accept">I Understand & Continue</button>
+      <button class="accept-link" @click="accept">I Understand & Continue</button>
     </div>
 
     <!-- THREE CONTAINER -->
@@ -303,7 +303,7 @@ canvas {
   left: 50%;
   transform: translateX(-50%);
   padding: 12px 20px;
-  background-color: #008cdd;
+  background-color: var(--accent);
   color: white;
   border: none;
   border-radius: 8px;
@@ -316,7 +316,6 @@ canvas {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  background-color: blueviolet;
 }
 .ar-controls {
   position: absolute;
@@ -332,5 +331,9 @@ canvas {
   margin: 0 8px;
   word-break: keep-all;
   white-space: nowrap;
+}
+.accept-link {
+  color: var(--accent);
+  cursor: pointer;
 }
 </style>

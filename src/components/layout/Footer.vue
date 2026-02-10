@@ -1,12 +1,7 @@
 <template>
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2024 My App. All rights reserved.</p>
-            <nav class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <p>&copy; 2026 James Clarke. All rights reserved.</p>
         </div>
     </footer>
 </template>

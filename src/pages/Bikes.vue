@@ -59,4 +59,8 @@ function closeSplatModal() {
     color: #2c3e50;
     font-size: 1.2em;
 }
+
+button {
+    color: var(--accent);
+}
 </style>

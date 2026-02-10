@@ -40,8 +40,8 @@ h1 {
 /* GRID THAT FILLS REMAINING SPACE */
 .links {
   flex: 1; /* take all remaining height */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -61,7 +61,7 @@ h1 {
   font-size: 1.5rem;
   gap: 12px;
 
-  height: 100%;
+  height: 150px;
   width: 100%;
 
   transition: transform 0.15s ease, filter 0.15s ease;
